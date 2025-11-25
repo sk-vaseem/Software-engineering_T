@@ -13,7 +13,7 @@ public class Demo2 {
 		FileOutputStream f2=new FileOutputStream("C:\\Users\\boddu.v\\eclipse-workspace\\mavenproject1\\src\\main\\java\\com\\example\\mavenproject1\\flesystem\\picture1.txt");
 		int ch=0,i=0;
 		while((ch=f1.read())!=-1){
-			if(i<=500) {
+			if(i<=500) {//upto 500 is it is meta data ,xaxis,yaxis to read that we give 500
 				f2.write(ch);
 				i++;
 				
