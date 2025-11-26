@@ -3,6 +3,7 @@ package com.example.mavenproject1.Designpattern;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +21,12 @@ public class StudentDAO {
 		ResultSet rs=ps.executeQuery();//rs point bof(begging of file-first record)
 		//object relation mapping
 		List<StudentDTO> l1=new ArrayList<>();
+		ResultSetMetaData rm=rs.getMetaData();
+		System.out.println(rm.getColumnCount());
+		int c=rm.getColumnCount();
+		for(int i=1;i<=c;i++) {
+			System.out.println(rm.getColumnName(i)+" "+rm.getColumnType(i));
+		}
 		while(rs.next()) { 
 			l1.add(new StudentDTO(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5)));
 			
