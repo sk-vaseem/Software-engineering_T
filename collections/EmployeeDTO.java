@@ -1,5 +1,4 @@
 package collections;
-
 public class EmployeeDTO implements Comparable<EmployeeDTO> {
 	private int empid;
 	private String empname;
@@ -9,7 +8,7 @@ public class EmployeeDTO implements Comparable<EmployeeDTO> {
 		this.empname = empname;
 	}
 	public EmployeeDTO() {
-		
+	
 	}
 	
 	public int getEmpid() {

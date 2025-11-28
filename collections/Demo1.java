@@ -1,13 +1,11 @@
 package collections;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Demo1 {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<EmployeeDTO> obj=new ArrayList<>();

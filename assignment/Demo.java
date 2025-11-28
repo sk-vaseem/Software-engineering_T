@@ -1,7 +1,5 @@
 package assignment;
-
 public class Demo {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Matrix ob1=new Matrix(3,3);

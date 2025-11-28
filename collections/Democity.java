@@ -33,7 +33,7 @@ public class Democity {
 		mp2.keySet().forEach(System.out::println);
 		mp.keySet().forEach((x)->{System.out.println(x+" "+mp.get(x));});
 		mp.keySet().stream().filter((x)->(mp.get(x)>2750&&mp.get(x)<3750)).forEach((x)->{System.out.println(x+" "+mp.get(x));});
-		
+	
 	}
 
 }
